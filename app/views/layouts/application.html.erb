@@ -15,9 +15,9 @@
       </div>
     <% end %>
     <% if signed_in? %>
-    <div>Hi! <%= current_user.name %></div>
+    <div>Hi! <%= current_user.name %> <%= link_to "Logout", logout_path, method: :delete %></div>
     <% end %>
-    
+
     <%= yield %>
 
   </body>
