@@ -1,0 +1,27 @@
+<h1 class="text-center">Productos</h1>
+<div class="container">
+  <div class="row">
+    <div class=".col-sm-8.col-sm-offset-2">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>URL</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @products.each do |product| %>
+            <tr>
+              <td><%= product.id %></td>
+              <td><%= product.name %></td>
+              <td><%= product.url %></td>
+              <td><%= product.description %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
